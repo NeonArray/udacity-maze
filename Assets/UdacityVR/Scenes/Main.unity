@@ -232,6 +232,8 @@ GameObject:
   - component: {fileID: 75129840}
   - component: {fileID: 75129838}
   - component: {fileID: 75129837}
+  - component: {fileID: 75129843}
+  - component: {fileID: 75129839}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -265,6 +267,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.002467547, y: 0.005254395, z: 0.0065792543}
   m_Center: {x: 0, y: -0.000023598968, z: 0.0058991616}
+--- !u!114 &75129839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75129836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 75129843}
+          m_MethodName: OnKeyClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!23 &75129840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -322,6 +354,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
+--- !u!114 &75129843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75129836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2253f7e5b4c14d6ca1d63312bab36c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &97684188
 Prefab:
   m_ObjectHideFlags: 0
@@ -1559,6 +1602,8 @@ GameObject:
   m_Component:
   - component: {fileID: 666523518}
   - component: {fileID: 666523519}
+  - component: {fileID: 666523521}
+  - component: {fileID: 666523520}
   m_Layer: 0
   m_Name: Left_Door
   m_TagString: Untagged
@@ -1593,6 +1638,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0011131202, y: 0.006039222, z: 0.017683798}
   m_Center: {x: 0.000006508121, y: 0.0030288326, z: 0.008831698}
+--- !u!114 &666523520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666523517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8a5a2b11c2426cb2a2bea3e825751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &666523521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666523517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 666523520}
+          m_MethodName: OnDoorClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!4 &708232048
 Transform:
   m_ObjectHideFlags: 0
@@ -2445,6 +2531,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1451742985}
   - component: {fileID: 1451742986}
+  - component: {fileID: 1451742988}
+  - component: {fileID: 1451742987}
   m_Layer: 0
   m_Name: Right_Door
   m_TagString: Untagged
@@ -2479,6 +2567,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0011131202, y: 0.006039222, z: 0.017683798}
   m_Center: {x: 0.000006508121, y: 0.0030288326, z: 0.008831698}
+--- !u!114 &1451742987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451742984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8a5a2b11c2426cb2a2bea3e825751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1451742988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451742984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1451742987}
+          m_MethodName: OnDoorClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1549677877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,6 +2914,8 @@ GameObject:
   - component: {fileID: 1970028579}
   - component: {fileID: 1970028578}
   - component: {fileID: 1970028577}
+  - component: {fileID: 1970028576}
+  - component: {fileID: 1970028575}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -2792,6 +2923,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1970028575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970028574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1970028576}
+          m_MethodName: OnCoinClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &1970028576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970028574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4259efea429e3458b997fe590ca4b9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &1970028577
 MeshCollider:
   m_ObjectHideFlags: 0
