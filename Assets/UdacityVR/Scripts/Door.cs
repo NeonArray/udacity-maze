@@ -55,11 +55,18 @@ public class Door : MonoBehaviour {
 
 		// TODO: If the door is unlocked, start animating the door rotating open and play a sound to indicate the door is opening
 		// Use 'locked' to check if the door is locked and ...
-		// ... start the animation defined in Update() by changing the value of 'opening'
-		// ... use 'audioSource' to play the AudioClip assigned to the AudioSource component
+		if (!this.locked)
+		{
+			// ... start the animation defined in Update() by changing the value of 'opening'
+			this.opening = true;
+			// ... use 'audioSource' to play the AudioClip assigned to the AudioSource component
+			this.audioSource.Play();
+		}
+
 
 		// OPTIONAL-CHALLENGE: Prevent the door from being interacted with after it has started opening
 		// TIP: You could disable the Event Trigger component, or for an extra challenge, try disabling all the Collider components on all children
+		
 
 		// OPTIONAL-CHALLENGE: Play a different sound if the door is locked
 		// TIP: You could get a reference to the 'Door_Locked' audio and play it without assigning it to the AudioSource component
@@ -67,13 +74,7 @@ public class Door : MonoBehaviour {
 
 
 	public void Unlock () {
-		/// Called from Key.OnKeyClicked(), i.e. the Key.cs script, when the 'Key' game object is clicked
-		/// - Unlocks the door
-
-		// Prints to the console when the method is called
 		Debug.Log ("'Door.Unlock()' was called");
-
-		// TODO: Unlock the door 
-		// Unlock the door by changing the value of 'locked'
+		this.locked = false;
 	}
 }
